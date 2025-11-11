@@ -122,22 +122,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-.gap-12px {
+.gap-12 {
   gap: 12px;
 }
-.Buy {
-  height: 36px;
-  width: 66px;
-  border: 1px solid #2997ff;
-  border-radius: 999px;
-  font-family: "Inter", sans-serif;
-  color: white;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 14px;
-}
+
 .iphon17-box {
   /* width: 241px; */
   height: 114px;
@@ -192,6 +180,10 @@ button {
   justify-content: center;
   align-items: end;
 }
+.btn-box {
+  display: flex;
+  gap: 12px;
+}
 @media screen and (min-width: 768px) {
   .gol {
     align-items: start;
@@ -201,5 +193,118 @@ button {
   }
   .iphone17 {
     background-image: url(./images/horizontal-iphone16.png);
+  }
+}
+
+/* ================================================================ */
+/* ================================================================ */
+.iphone-blue {
+  height: 500px;
+  background-size: cover;
+  background-image: url("./images/iphone-blue.jpg");
+  background-position: center;
+}
+.box-blue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 36px;
+}
+.button {
+  border-radius: 999px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  height: 36px;
+  font-family: "Inter", sans-serif;
+}
+.buy-white {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  width: 66px;
+  height: 36px;
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-family: "Inter", sans-serif;
+}
+.gol-blue {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+@media screen and (min-width: 768px) {
+  .iphone-blue {
+    background-image: url(./images/horizontal-iphoneBlue.jpg);
+  }
+}
+/* =================================================================== */
+/* =================================================================== */
+.guraw {
+  /* border: 1px solid red; */
+  height: 144px;
+  top: 36px;
+}
+.ipad-air {
+  background-image: url("./images/ipad-air.jpg");
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.learn-button {
+  height: 36px;
+  border-radius: 999px;
+  padding: 8px 16px;
+  background-color: #0071e3;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+.buy-end {
+  background-color: transparent;
+  border: 1px solid #0071e3;
+  color: #0071e3;
+  width: 66px;
+  height: 36px;
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-family: "Inter", sans-serif;
+}
+.two-sizes {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: middle;
+}
+.box-ipad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+  gap: 12px;
+}
+
+.ipad-icon {
+  width: 180px;
+  height: 42px;
+}
+.solongo {
+  background-image: linear-gradient(to right, #019ffb, #f55be4, #fd8c1f);
+  background-clip: text;
+  color: transparent;
+  font-weight: 500;
+  margin-top: 286px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .ipad-air {
+    background-image: url(./images/ipad-ipad.jpg);
   }
 }
