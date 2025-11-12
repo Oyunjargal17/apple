@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apple</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- ================================== -->
@@ -78,20 +85,6 @@
     <!-- ========================================================== -->
     <!-- Endees gurawdah heseg ehlej baina. -->
     <!-- ========================================================= -->
-    <div class="ipad-air">
-      <div class="box-ipad">
-        <img class="ipad-icon" src="./images/ipad-icon.png" alt="ipad-icon" />
-        <p class="two-sizes">Two sizes. Faster chip. Does it all.</p>
-        <div class="flex gap-12">
-          <p class="learn-button">Learn more</p>
-          <p class="buy-end">Buy</p>
-        </div>
-      </div>
-      <p class="solongo">Hello, Apple Intelligence.</p>
-    </div>
-    <!-- ================================================================ -->
-    <!-- apple-gift -->
-    <!-- ================================================================ -->
     <div class="apple-gift-none">
       <div class="apple-box">
         <div>
@@ -103,10 +96,40 @@
         </div>
       </div>
     </div>
+    <div class="responsive-wrapper">
+      <div class="ipad-air">
+        <div class="box-ipad">
+          <img class="ipad-icon" src="./images/ipad-icon.png" alt="ipad-icon" />
+          <p class="two-sizes">Two sizes. Faster chip. Does it all.</p>
+          <div class="flex gap-12">
+            <p class="learn-button">Learn more</p>
+            <p class="buy-end">Buy</p>
+          </div>
+        </div>
+        <p class="solongo">Hello, Apple Intelligence.</p>
+      </div>
+      <div class="airPod-web-none">
+        <div class="airPod-web-box">
+          <div>
+            <h1 class="airPod-web-box-h1">AirPods Pro 2</h1>
+            <p class="airPod-web-box-p">Now with a Hearing Aid feature.2</p>
+          </div>
+          <div class="flex gap-12">
+            <p class="learn-button">Learn more</p>
+            <p class="buy-end">Buy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================================ -->
+    <!-- apple-gift -->
+    <!-- ================================================================ -->
+
     <!-- ===================================================================
                       grid
     ======================================================================== -->
-    <div class="grid-container">
+    <div class="grid-container gap-12">
       <div class="ipod__background">
         <div class="ipod__box">
           <div class="ipod_h1">
@@ -124,11 +147,11 @@
       <div class="watch_background">
         <div class="watch_box">
           <div class="gap-12">
-            <img
-              class="watch_icon"
-              src="./images/watch-icon.png"
-              alt="watch-icon"
-            />
+            <div class="flex">
+              <i class="fa-brands fa-apple apple-img"></i>
+              <h1 class="watch-background-box-h1">WATCH</h1>
+            </div>
+
             <p class="watch_p">SERIES 10</p>
             <p class="watch_pp">Thinstant classic</p>
           </div>
@@ -138,35 +161,64 @@
           </div>
         </div>
       </div>
-      <div class="watch_background">
-        <div class="watch_box">
-          <div class="gap-12">
-            <img
-              class="watch_icon"
-              src="./images/watch-icon.png"
-              alt="watch-icon"
-            />
-            <p class="watch_p">SERIES 10</p>
-            <p class="watch_pp">Thinstant classic</p>
+      <div class="macbook-background">
+        <div class="macbook-background-box">
+          <div>
+            <h1 class="macbook-background-box-h1">MacBook Air</h1>
+            <p class="macbook-background-box-p">Lean. Mean. M3 machine.</p>
           </div>
           <div class="flex gap-12">
             <p class="learn-button">Learn more</p>
             <p class="buy-end">Buy</p>
+          </div>
+        </div>
+      </div>
+      <div class="small-bizness-background">
+        <div class="small-bizness-box">
+          <div>
+            <h1 class="small-bizness-box-h1">Apple for Small Business</h1>
+            <p class="small-bizness-box-p">
+              Hardware, software, and expert help - all in one place.
+            </p>
+          </div>
+          <div class="flex gap-12">
+            <p class="learn-button">Learn more</p>
+          </div>
+        </div>
+      </div>
+      <div class="carrier-background">
+        <div class="carrier-background-box">
+          <div>
+            <h1 class="carrier-background-box-h1">Carrier deals at Apple</h1>
+            <p class="carrier-background-box-p">
+              Get up to $1000 in credit on a new iPhone. Trade-in may be
+              required.
+            </p>
+          </div>
+          <div class="flex gap-12">
+            <p class="find-your-deal">Find your deal</p>
+          </div>
+        </div>
+      </div>
+      <div class="trade-background">
+        <div class="trade-background-box">
+          <div class="flex">
+            <i class="fa-brands fa-apple apple-img"></i>
+            <h1 class="trade-background-box-h1">Trade In</h1>
+          </div>
+          <div>
+            <p class="trade-background-box-p">
+              Get $180–$650 in credit when you trade in iPhone 12 or higher.4
+            </p>
+          </div>
+          <div class="flex gap-12">
+            <p class="get-your-estimate">Get your estimate</p>
           </div>
         </div>
       </div>
     </div>
     <!-- =====================================================
-                    airPod- Web
+                    Desktop 1024px
   ============================================================ -->
-    <div class="airPod-web">
-      <div class="airPod-web-box">
-        <div>
-          <h1 class="airPod-web-box-h1">AirPods Pro 2</h1>
-          <p class="airPod-web-box-p">Now with a Hearing Aid feature.2</p>
-        </div>
-        <div></div>
-      </div>
-    </div>
   </body>
 </html>
