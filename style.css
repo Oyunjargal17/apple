@@ -197,6 +197,7 @@ button {
 }
 
 /* ================================================================ */
+/* iphone-blue */
 /* ================================================================ */
 .iphone-blue {
   height: 500px;
@@ -307,4 +308,155 @@ button {
   .ipad-air {
     background-image: url(./images/ipad-ipad.jpg);
   }
+}
+/* <!-- ================================================================ -->
+                          <!-- apple-gift -->
+    <!-- ================================================================ --> */
+.apple-gift-none {
+  display: none;
+}
+.apple-box {
+  /* border: 1px solid red; */
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.apple-h1 {
+  /* height: 164px; */
+  font-family: "Inter", sans-serif;
+  font-size: 52px;
+  text-align: center;
+}
+.apple__p {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+.apple__button {
+  width: 114px;
+  height: 44px;
+  gap: 10px;
+  border-radius: 999px;
+  /* padding: 12px 20px; */
+  background-color: #0071e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* <!-- ================================================================
+                iPod
+    ===================================================================== --> */
+.ipod__background {
+  background-image: url("./images/airPod-iphone.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ipod__box {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 240px;
+}
+.ipod_h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+.ipod_p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+/* <!-- ====================================================================
+              watch
+  =========================================================================--> */
+.watch_background {
+  background-image: url("./images/watch-background.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 490px;
+  display: flex;
+  justify-content: center;
+}
+.watch_box {
+  width: 235px;
+  height: 135px;
+  /* border: 1px solid red; */
+  margin-top: 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.watch_icon {
+  width: 152px;
+  height: 34px;
+}
+.watch_p {
+  font-family: "Inter", sans-serif;
+  font-style: Bold;
+  font-size: 13px;
+  text-align: center;
+}
+.watch_pp {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* <!-- ===================================================================
+                      grid
+    ======================================================================= --> */
+@media screen and (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .apple-gift-none {
+    display: flex;
+    background-image: url("./images/apple-gift.jpg");
+    height: 692px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+}
+/* <!-- =====================================================
+                    airPod- Web
+  ============================================================ --> */
+.airPod-web {
+  background-image: url("./images/airPod-web.jpg");
+  height: 580px;
+  background-position: center;
+  background-size: cover;
+}
+.airPod-web-box-h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  text-align: center;
+  color: white;
+}
+.airPod-web-box-p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: white;
 }
