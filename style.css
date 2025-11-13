@@ -5,9 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* =================================== */
-/* Эндээс эхний хэсэг эхлэж байна */
-/* =================================== */
+/* ============================================
+          Header
+=============================================== */
 body {
   display: flex;
   flex-direction: column;
@@ -37,38 +37,6 @@ body {
   display: flex;
 }
 
-/* =================================== */
-/* Эндээс 768px ээс дээш хэсэг эхлэж байна */
-/* =================================== */
-@media screen and (min-width: 768px) {
-  .menu_background {
-    width: 100%;
-    height: 48px;
-    background-color: #f5f5f7cc;
-  }
-}
-
-/* =================================== */
-/* Эндээс 768px ээс дээш хэсэг эхлэж байна */
-/* =================================== */
-@media screen and (min-width: 940px) {
-  .header-flex {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-    align-items: center;
-  }
-  .menus {
-    display: block;
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-    align-items: center;
-  }
-  .menu-icon {
-    display: none;
-  }
-}
 /* ====================================================== */
 .menu-down {
   font-family: "Inter", sans-serif;
@@ -77,13 +45,8 @@ body {
 
   background-color: #ffffff;
 }
-/* <!-- ================================================ -->
-=====================================================================================================================================
-=====================================================================================================================================
-
-    <!-- Эндээс хоёрдах хэсэг эхлэж байна -->
-    <!-- ================================================ --> */
-
+/* ================================================================= */
+/* ================================================================= */
 .iphone17 {
   height: 500px;
   background-size: cover;
@@ -125,7 +88,6 @@ body {
 .gap-12 {
   gap: 12px;
 }
-
 .iphon17-box {
   /* width: 241px; */
   height: 114px;
@@ -184,21 +146,9 @@ button {
   display: flex;
   gap: 12px;
 }
-@media screen and (min-width: 768px) {
-  .gol {
-    align-items: start;
-  }
-  .box {
-    margin-top: 58px;
-  }
-  .iphone17 {
-    background-image: url(./images/horizontal-iphone16.png);
-  }
-}
-
-/* ================================================================ */
+/* =================================================== */
 /* iphone-blue */
-/* ================================================================ */
+/* =================================================== */
 .iphone-blue {
   height: 500px;
   background-size: cover;
@@ -236,11 +186,6 @@ button {
   justify-content: center;
   align-items: start;
 }
-@media screen and (min-width: 768px) {
-  .iphone-blue {
-    background-image: url(./images/horizontal-iphoneBlue.jpg);
-  }
-}
 /* =================================================================== */
 /* =================================================================== */
 .guraw {
@@ -254,7 +199,7 @@ button {
 .ipad-air {
   background-image: url("./images/ipad-air.jpg");
   width: 100%;
-  height: 500px;
+  height: 580px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -295,7 +240,6 @@ button {
   margin-top: 36px;
   gap: 12px;
 }
-
 .ipad-icon {
   width: 180px;
   height: 42px;
@@ -308,24 +252,25 @@ button {
   margin-top: 286px;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .ipad-air {
-    background-image: url(./images/ipad-ipad.jpg);
-  }
-}
-/* <!-- ================================================================ -->
+
+/* <!-- =============================================== -->
                           <!-- apple-gift -->
-    <!-- ================================================================ --> */
+    <!-- ============================================== --> */
 .apple-gift-none {
   display: none;
+  background-image: url("./images/apple-gift.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 692px;
 }
 .apple-box {
   /* border: 1px solid red; */
-  justify-content: center;
+  justify-content: end;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
+  height: 100%;
+  padding-bottom: 82px;
 }
 .apple-h1 {
   /* height: 164px; */
@@ -351,9 +296,9 @@ button {
   margin-top: 20px;
 }
 
-/* <!-- ================================================================
+/* <!-- =========================================
                 iPod
-    ===================================================================== --> */
+    ============================================= --> */
 .ipod__background {
   background-image: url("./images/airPod-iphone.jpg");
   background-size: cover;
@@ -385,9 +330,9 @@ button {
   color: white;
   margin-bottom: 20px;
 }
-/* <!-- ====================================================================
+/* <!-- ========================================
               watch
-  =========================================================================--> */
+  ==============================================--> */
 .watch_background {
   background-image: url("./images/watch-background.jpg");
   background-position: center;
@@ -428,48 +373,12 @@ button {
   font-size: 28px;
   text-align: center;
 }
-/* <!-- ===================================================================
+/* <!-- =================================
                       grid
-    ======================================================================= --> */
-@media screen and (min-width: 768px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
-}
-/* =============================================================
-        Delgetsiin urgun Desktop boloh ued (992px)
-================================================================ */
+    ===================================== --> */
 .airPod-web-none {
   display: none;
 }
-
-@media screen and (min-width: 992px) {
-  .responsive-wrapper {
-    display: flex;
-    gap: 12px;
-  }
-  .ipad-air {
-    flex: 50%;
-    width: auto;
-  }
-  .airPod-web-none {
-    display: flex;
-    flex: 50%;
-    background-image: url("./images/airPod-web.jpg");
-    height: 580px;
-    background-position: center;
-    background-size: cover;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .airPod-web-box {
-    display: flex;
-  }
-}
-
 .airPod-web-box {
   /* border: 1px solid red; */
   display: flex;
@@ -494,23 +403,9 @@ button {
   color: white;
   margin-bottom: 25px;
 }
-@media screen and (min-width: 992px) {
-  .responsive-wrapper {
-    display: flex;
-    gap: 12px;
-  }
-  .ipad-air {
-    flex: 50%;
-    width: auto;
-  }
-  .airPod-web-box {
-    display: block;
-    flex: 50%;
-  }
-}
-/* ===================================================================
+/* =======================================
             macbook-air
-====================================================================== */
+========================================== */
 .macbook-background {
   background-image: url("./images/macbook.jpg");
   background-position: center;
@@ -540,9 +435,9 @@ button {
   text-align: center;
   margin-bottom: 20px;
 }
-/* ===================================================
+/* ========================================
           small-bizness-background
-====================================================== */
+=========================================== */
 .small-bizness-background {
   background-image: url("./images/small-bizness.png");
   background-position: center;
@@ -573,9 +468,9 @@ button {
   text-align: center;
   margin-bottom: 20px;
 }
-/* ===================================================
+/* ==================================
           carrier-background
-====================================================== */
+===================================== */
 .carrier-background {
   background-image: url("./images/carrier-background.jpg");
   background-position: center;
@@ -614,9 +509,9 @@ button {
   color: white;
   font-family: "Inter", sans-serif;
 }
-/* ===================================================
+/* ===============================
           trade-background
-====================================================== */
+================================== */
 .trade-background {
   background-image: url("./images/trade-background.jpg");
   background-position: center;
@@ -657,4 +552,374 @@ button {
 }
 .apple-img {
   font-size: 30px;
+}
+/* ======================================
+          watch-horizontal
+========================================= */
+.watch-horizontal {
+  display: none;
+  background-image: url("./images/watch-horizontal.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 580px;
+  justify-content: center;
+  gap: 12px;
+}
+.watch_box-horizontal {
+  height: 135px;
+  /* border: 1px solid red; */
+  margin-top: 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* ======================================
+        Scroll-iPhone-zurag
+========================================= */
+.scroll-iPhone-zurag {
+  display: flex;
+  width: 100%;
+  height: 496px;
+  /* border: 2px solid red; */
+  gap: 12px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.scroll-iPhone-zurag1 {
+  background-image: url("./images/1.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 274px;
+  height: 495px;
+  scroll-snap-align: center;
+}
+.scroll-iPhone-zurag2 {
+  background-image: url("./images/2.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 274px;
+  height: 495px;
+  scroll-snap-align: center;
+}
+.scroll-iPhone-zurag3 {
+  background-image: url("./images/3.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 274px;
+  height: 495px;
+  scroll-snap-align: center;
+}
+.scroll-iPhone-zurag4 {
+  background-image: url("./images/4.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 274px;
+  height: 495px;
+  scroll-snap-align: center;
+}
+.scroll-iPhone-zurag5 {
+  background-image: url("./images/5.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 274px;
+  height: 495px;
+  scroll-snap-align: center;
+}
+.scroll-iPhone-zurag6 {
+  background-image: url("./images/6.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 274px;
+  height: 495px;
+  scroll-snap-align: center;
+}
+.scroll-iPhone-zurag7 {
+  background-image: url("./images/7.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 274px;
+  height: 495px;
+  scroll-snap-align: center;
+}
+.scroll-iPhone-zurag8 {
+  background-image: url("./images/8.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 274px;
+  height: 495px;
+  scroll-snap-align: center;
+}
+.indicator-iPhone {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+a {
+  width: 8px;
+  height: 8px;
+  background-color: #0000006b;
+  border-radius: 100%;
+}
+/* ======================================
+        Scroll-tablet-zurag
+========================================= */
+.scroll-tablet-zurag {
+  /* display: flex; */
+  display: none;
+  width: 100%;
+  height: 368px;
+  /* border: 2px solid red; */
+  gap: 12px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.scroll-tablet-zurag1 {
+  background-image: url("./images/11.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 689px;
+  height: 368px;
+  scroll-snap-align: center;
+}
+.scroll-tablet-zurag2 {
+  background-image: url("./images/22.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 689px;
+  height: 368px;
+  scroll-snap-align: center;
+}
+.scroll-tablet-zurag3 {
+  background-image: url("./images/33.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 689px;
+  height: 368px;
+  scroll-snap-align: center;
+}
+.scroll-tablet-zurag4 {
+  background-image: url("./images/44.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 689px;
+  height: 368px;
+  scroll-snap-align: center;
+}
+.scroll-tablet-zurag5 {
+  background-image: url("./images/55.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 689px;
+  height: 368px;
+  scroll-snap-align: center;
+}
+.scroll-tablet-zurag6 {
+  background-image: url("./images/66.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 689px;
+  height: 368px;
+  scroll-snap-align: center;
+}
+.scroll-tablet-zurag7 {
+  background-image: url("./images/77.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 689px;
+  height: 368px;
+  scroll-snap-align: center;
+}
+.scroll-tablet-zurag8 {
+  background-image: url("./images/88.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 689px;
+  height: 368px;
+  scroll-snap-align: center;
+}
+.scroll-tablet-zurag9 {
+  background-image: url("./images/99.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 689px;
+  height: 368px;
+  scroll-snap-align: center;
+}
+.indicator-tablet {
+  display: none;
+  gap: 12px;
+}
+/* ======================================
+        Scroll-Desktop-zurag
+========================================= */
+.scroll-desktop-zurag {
+  /* display: flex; */
+  display: none;
+  width: 100%;
+  height: 668px;
+  /* border: 2px solid red; */
+  gap: 12px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.scroll-desktop-zurag1 {
+  background-image: url("./images/111.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 1250px;
+  height: 668px;
+  scroll-snap-align: center;
+}
+.scroll-desktop-zurag2 {
+  background-image: url("./images/222.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 1250px;
+  height: 668px;
+  scroll-snap-align: center;
+}
+.scroll-desktop-zurag3 {
+  background-image: url("./images/333.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 1250px;
+  height: 668px;
+  scroll-snap-align: center;
+}
+.indicator-desktop {
+  display: none;
+  gap: 12px;
+}
+/* =================================== */
+/* Эндээс 768px болон түүнээс дээш хэсэг эхлэж байна */
+/* =================================== */
+@media screen and (min-width: 768px) {
+  .menu_background {
+    width: 100%;
+    height: 48px;
+    background-color: #f5f5f7cc;
+  }
+  .gol {
+    align-items: start;
+  }
+  .box {
+    margin-top: 58px;
+  }
+  .iphone17 {
+    background-image: url(./images/horizontal-iphone16.png);
+  }
+  .iphone-blue {
+    background-image: url(./images/horizontal-iphoneBlue.jpg);
+  }
+  .ipad-air {
+    background-image: url(./images/ipad-ipad.jpg);
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .scroll-iPhone-zurag {
+    display: none;
+  }
+  .indicator-iPhone {
+    display: none;
+  }
+  .scroll-tablet-zurag {
+    display: flex;
+  }
+  .indicator-tablet {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* =================================== */
+/* Эндээс 992px болон түүнээс дээш хэсэг эхлэж байна */
+/* =================================== */
+@media screen and (min-width: 992px) {
+  .header-flex {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+  .menus {
+    display: block;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .apple-gift-none {
+    display: block;
+  }
+  .responsive-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .ipad-air {
+    flex: 50%;
+    width: auto;
+  }
+  .airPod-web-none {
+    display: flex;
+    flex: 50%;
+    background-image: url("./images/airPod-web.jpg");
+    height: 580px;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .airPod-web-box {
+    display: flex;
+  }
+  .ipad-air {
+    flex: 50%;
+    width: auto;
+  }
+  .airPod-web-box {
+    display: block;
+    flex: 50%;
+  }
+  /* .watch-horizontal {
+    display: block;
+  } */
+  .ipod__background {
+    display: none;
+  }
+  .watch_background {
+    display: none;
+  }
+  .scroll-iPhone-zurag {
+    display: none;
+  }
+  .indicator-iPhone {
+    display: none;
+  }
+  .scroll-tablet-zurag {
+    display: none;
+  }
+  .scroll-tablet-zurag {
+    display: none;
+  }
+  .indicator-tablet {
+    display: none;
+  }
+  .scroll-desktop-zurag {
+    display: flex;
+  }
+  .indicator-desktop {
+    display: flex;
+    justify-content: center;
+  }
 }
