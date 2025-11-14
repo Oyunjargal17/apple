@@ -218,7 +218,7 @@ button {
   background-color: transparent;
   border: 1px solid #0071e3;
   color: #0071e3;
-  width: 66px;
+  min-width: 66px;
   height: 36px;
   border-radius: 999px;
   padding: 8px 20px;
@@ -415,6 +415,13 @@ button {
   display: flex;
   justify-content: center;
 }
+.macbook-background-horizontal {
+  display: none;
+}
+.card-background-horizontal {
+  display: none;
+}
+
 .macbook-background-box {
   width: 257px;
   height: 115px;
@@ -520,6 +527,9 @@ button {
   gap: 12px;
   display: flex;
   justify-content: center;
+}
+.trade-background-horizontal {
+  display: none;
 }
 .trade-background-box {
   width: 457px;
@@ -835,6 +845,8 @@ a {
 }
 .phone-media-container {
   height: 160px;
+  width: 481px;
+  overflow-x: hidden;
 }
 @keyframes slider {
   from {
@@ -906,6 +918,105 @@ a {
 .phone-tablet-container {
   display: none;
   height: 194px;
+  overflow-x: hidden;
+  width: 768px;
+}
+@keyframes slider {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.phone-tablet-inner {
+  animation: slider 8s infinite linear;
+}
+/* ========================================= */
+.display-media-img {
+  background-image: url("./images/diplay-fintness.jpg");
+  width: 417px;
+  height: 236px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.display-media-img-futball {
+  background-image: url("./images/dipslay-futball.jpg");
+  width: 417px;
+  height: 236px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.display-media-img-fitness {
+  background-image: url("./images/diplay-fitness.jpg");
+  width: 417px;
+  height: 236px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.gap-70px {
+  gap: 150px;
+}
+.desktop-media-box {
+  background-color: #1b2632;
+  width: 417px;
+  height: 236px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.desktop-media-box-calendari {
+  background-color: #ebb799;
+  width: 417px;
+  height: 236px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tablet-media-end {
+  display: flex;
+  margin-top: 70px;
+}
+.tablet-media-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 14px;
+  color: white;
+}
+.la-offical {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 12px;
+  padding-top: 5px;
+}
+.desktop-img1 {
+  /* width: 1920px; */
+  height: 236px;
+}
+.phone-fitnes-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 12px;
+  padding-top: 5px;
+}
+.desktop-media-container {
+  display: none;
+  width: 1920px;
+  height: 236px;
+  overflow-x: hidden;
 }
 @keyframes slider {
   from {
@@ -915,13 +1026,17 @@ a {
     transform: translateX(-100%);
   }
 }
-.phone-tablet-inner {
+.desktop-media-inner {
   animation: slider 8s infinite linear;
+}
+.card-background-horizontal1 {
+  display: flex;
+  justify-content: center;
 }
 /* =================================== */
 /* Эндээс 768px болон түүнээс дээш хэсэг эхлэж байна */
 /* =================================== */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .menu_background {
     width: 100%;
     height: 48px;
@@ -970,7 +1085,7 @@ a {
 /* =================================== */
 /* Эндээс 992px болон түүнээс дээш хэсэг эхлэж байна */
 /* =================================== */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 1920px) {
   .header-flex {
     display: flex;
     gap: 24px;
@@ -1021,9 +1136,51 @@ a {
     display: block;
     flex: 50%;
   }
-  /* .watch-horizontal {
+  .watch-horizontal {
     display: block;
-  } */
+  }
+  .macbook-background {
+    display: none;
+  }
+  .small-bizness-background {
+    display: none;
+  }
+  .carrier-background {
+    display: none;
+  }
+  .trade-background {
+    display: none;
+  }
+  .macbook-background-horizontal {
+    display: block;
+    background-image: url("./images/macbook-horizontal.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 580px;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+  }
+  .trade-background-horizontal {
+    display: block;
+    background-image: url("./images/trade-horizontal.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 580px;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+  }
+  .card-background-horizontal {
+    display: block;
+    background-image: url("./images/card-horizontal.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 580px;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+  }
   .ipod__background {
     display: none;
   }
@@ -1057,5 +1214,8 @@ a {
   }
   .phone-media-container {
     display: none;
+  }
+  .desktop-media-container {
+    display: block;
   }
 }
