@@ -33,7 +33,14 @@
 body {
   background-color: #f5f5f7;
 }
-
+.gap-24 {
+  gap: 24px;
+}
+.gap-200 {
+  gap: 1000px;
+  display: flex;
+  justify-content: center;
+}
 /* ====================================================== */
 .menu-down {
   font-family: "Inter", sans-serif;
@@ -49,6 +56,9 @@ body {
   background-size: cover;
   height: 75px;
   width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 .solongo {
   background-image: linear-gradient(to right, #019ffb, #f55be4, #fd8c1f);
@@ -58,7 +68,7 @@ body {
   text-align: center;
   font-family: "Inter", sans-serif;
   width: fit-content;
-  box-shadow: inset 11px 11px 20px #bebebe, inset -11px -11px 20px #ffffff;
+  /* box-shadow: inset 11px 11px 20px #bebebe, inset -11px -11px 20px #ffffff; */
 }
 .font-44 {
   font-size: 44px;
@@ -66,7 +76,38 @@ body {
 .font-22 {
   font-size: 22px;
 }
-
+.gift__magic {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 44px;
+  line-height: 52.01px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  color: #6e6e73;
+}
+.tseej-box {
+  width: 226px;
+  height: 100px;
+  /* border: 1px solid red; */
+}
+.asuult {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
+.link {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #0066cc;
+}
+.head_container {
+}
 /* scale: 1.1; */
 /* box-shadow:  5px 5px 10px #cacaca,
              -5px -5px 10px #f6f6f6; */

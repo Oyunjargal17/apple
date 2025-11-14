@@ -40,7 +40,7 @@ body {
 /* ====================================================== */
 .menu-down {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   text-align: center;
 
   background-color: #ffffff;
@@ -794,6 +794,130 @@ a {
   display: none;
   gap: 12px;
 }
+.phone-media-box {
+  background-color: #6529cf;
+  width: 238px;
+  height: 134px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone-media-text {
+  font-family: "Inter", sans-serif;
+  font-style: Bold;
+  font-size: 14px;
+  text-align: center;
+}
+.phone-media-apple {
+  font-size: 20px;
+}
+.phone-media-end {
+  display: flex;
+  margin-top: 70px;
+}
+.la-offical {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 12px;
+  padding-top: 5px;
+}
+.phone-img1 {
+  width: 238px;
+  height: 160px;
+}
+.phone-fitnes-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 12px;
+  padding-top: 5px;
+}
+.phone-media-container {
+  height: 160px;
+}
+@keyframes slider {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.phone-media-inner {
+  animation: slider 8s infinite linear;
+}
+/* =================================== */
+.phone-tablet-box {
+  background-color: #6529cf;
+  width: 238px;
+  height: 134px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone-tablet-box1 {
+  background-color: #2a402d;
+  width: 238px;
+  height: 134px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone-tablet-box2 {
+  background-color: #040303;
+  width: 238px;
+  height: 134px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone-media-text {
+  font-family: "Inter", sans-serif;
+  font-style: Bold;
+  font-size: 14px;
+  text-align: center;
+}
+.phone-media-apple {
+  font-size: 20px;
+}
+.phone-media-end {
+  display: flex;
+  margin-top: 70px;
+}
+.la-offical {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 12px;
+  padding-top: 5px;
+}
+.tablet-img1 {
+  width: 286px;
+  height: 161px;
+}
+.phone-fitnes-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 12px;
+  padding-top: 5px;
+}
+.phone-tablet-container {
+  display: none;
+  height: 194px;
+}
+@keyframes slider {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.phone-tablet-inner {
+  animation: slider 8s infinite linear;
+}
 /* =================================== */
 /* Эндээс 768px болон түүнээс дээш хэсэг эхлэж байна */
 /* =================================== */
@@ -835,6 +959,12 @@ a {
   .indicator-tablet {
     display: flex;
     justify-content: center;
+  }
+  .phone-tablet-container {
+    display: block;
+  }
+  .phone-media-container {
+    display: none;
   }
 }
 /* =================================== */
@@ -921,5 +1051,11 @@ a {
   .indicator-desktop {
     display: flex;
     justify-content: center;
+  }
+  .phone-tablet-container {
+    display: none;
+  }
+  .phone-media-container {
+    display: none;
   }
 }
