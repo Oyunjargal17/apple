@@ -151,6 +151,16 @@ button {
   display: flex;
   gap: 12px;
 }
+.buy-buy {
+  color: #2997ff;
+  background-color: transparent;
+  border: solid 1px #2997ff;
+}
+.buy-buy:hover {
+  color: white;
+  background-color: #2997ff;
+}
+
 /* =================================================== */
 /* iphone-blue */
 /* =================================================== */
@@ -853,6 +863,9 @@ a {
   width: 100%;
   overflow-x: hidden;
 }
+.phone-media-container:hover.phone-media-inner {
+  animation-play-state: paused;
+}
 @keyframes mobile-slider {
   from {
     transform: translateX(0px);
@@ -1041,7 +1054,7 @@ a {
 /* =================================== */
 /* Эндээс 768px болон түүнээс дээш хэсэг эхлэж байна */
 /* =================================== */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 600px) {
   .menu_background {
     width: 100%;
     height: 48px;
@@ -1090,12 +1103,12 @@ a {
 /* =================================== */
 /* Эндээс 992px болон түүнээс дээш хэсэг эхлэж байна */
 /* =================================== */
-@media screen and (min-width: 769px) and (max-width: 1920px) {
+@media screen and (min-width: 1080px) {
   .header-flex {
-    /* display: flex;
-    gap: 24px; */
-    justify-content: space-between;
-    /* align-items: center; */
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
   }
   .menus {
     /* display: block; */
@@ -1223,5 +1236,11 @@ a {
   }
   .desktop-media-container {
     display: block;
+  }
+  .iphone17 {
+    background-image: url(./images/horizontal-iphone16.png);
+  }
+  .iphone-blue {
+    background-image: url(./images/horizontal-iphoneBlue.jpg);
   }
 }
