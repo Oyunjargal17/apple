@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +28,11 @@ body {
 }
 .menus {
   display: none;
+  /* display: block; */
+  /* display: flex; */
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
 }
 .end {
   display: flex;
@@ -802,7 +807,7 @@ a {
 }
 .indicator-desktop {
   display: none;
-  gap: 12px;
+  /* gap: 12px; */
 }
 .phone-media-box {
   background-color: #6529cf;
@@ -845,10 +850,10 @@ a {
 }
 .phone-media-container {
   height: 160px;
-  width: 481px;
+  width: 100%;
   overflow-x: hidden;
 }
-@keyframes slider {
+@keyframes mobile-slider {
   from {
     transform: translateX(0px);
   }
@@ -857,7 +862,7 @@ a {
   }
 }
 .phone-media-inner {
-  animation: slider 8s infinite linear;
+  animation: mobile-slider 8s infinite linear;
 }
 /* =================================== */
 .phone-tablet-box {
@@ -919,9 +924,9 @@ a {
   display: none;
   height: 194px;
   overflow-x: hidden;
-  width: 768px;
+  width: 100%;
 }
-@keyframes slider {
+@keyframes tablet-slider {
   from {
     transform: translateX(0px);
   }
@@ -930,7 +935,7 @@ a {
   }
 }
 .phone-tablet-inner {
-  animation: slider 8s infinite linear;
+  animation: tablet-slider 8s infinite linear;
 }
 /* ========================================= */
 .display-media-img {
@@ -1014,11 +1019,11 @@ a {
 }
 .desktop-media-container {
   display: none;
-  width: 1920px;
+  width: 100%;
   height: 236px;
   overflow-x: hidden;
 }
-@keyframes slider {
+@keyframes desktop-slider {
   from {
     transform: translateX(0px);
   }
@@ -1027,7 +1032,7 @@ a {
   }
 }
 .desktop-media-inner {
-  animation: slider 8s infinite linear;
+  animation: desktop-slider 8s infinite linear;
 }
 .card-background-horizontal1 {
   display: flex;
@@ -1087,13 +1092,13 @@ a {
 /* =================================== */
 @media screen and (min-width: 769px) and (max-width: 1920px) {
   .header-flex {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-    align-items: center;
+    /* display: flex;
+    gap: 24px; */
+    justify-content: space-between;
+    /* align-items: center; */
   }
   .menus {
-    display: block;
+    /* display: block; */
     display: flex;
     gap: 24px;
     justify-content: center;
@@ -1208,6 +1213,7 @@ a {
   .indicator-desktop {
     display: flex;
     justify-content: center;
+    gap: 12px;
   }
   .phone-tablet-container {
     display: none;
