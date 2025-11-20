@@ -221,7 +221,7 @@ button {
 .ipad-air {
   background-image: url("./images/ipad-air.jpg");
   width: 100%;
-  height: 580px;
+  height: 500px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -271,7 +271,7 @@ button {
   background-clip: text;
   color: transparent;
   font-weight: 500;
-  margin-top: 326px;
+  margin-top: 286px;
   text-align: center;
 }
 
@@ -325,7 +325,7 @@ button {
   background-image: url("./images/airPod-iphone.jpg");
   background-size: cover;
   background-position: center;
-  height: 490px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,7 +359,7 @@ button {
   background-image: url("./images/watch-background.jpg");
   background-position: center;
   background-size: cover;
-  height: 490px;
+  height: 500px;
   display: flex;
   justify-content: center;
   gap: 12px;
@@ -432,7 +432,7 @@ button {
   background-image: url("./images/macbook.jpg");
   background-position: center;
   background-size: cover;
-  height: 490px;
+  height: 500px;
   gap: 12px;
   display: flex;
   justify-content: center;
@@ -471,7 +471,7 @@ button {
   background-image: url("./images/small-bizness.png");
   background-position: center;
   background-size: cover;
-  height: 490px;
+  height: 500px;
   gap: 12px;
   display: flex;
   justify-content: center;
@@ -504,7 +504,7 @@ button {
   background-image: url("./images/carrier-background.jpg");
   background-position: center;
   background-size: cover;
-  height: 490px;
+  height: 500px;
   gap: 12px;
   display: flex;
   justify-content: center;
@@ -545,7 +545,7 @@ button {
   background-image: url("./images/trade-background.jpg");
   background-position: center;
   background-size: cover;
-  height: 490px;
+  height: 500px;
   gap: 12px;
   display: flex;
   justify-content: center;
@@ -1074,6 +1074,37 @@ a {
   .ipad-air {
     background-image: url(./images/ipad-ipad.jpg);
   }
+  .ipod__background {
+    background-image: url("./images/airPod-tablet.jpg");
+    height: 490px;
+    width: 100%;
+  }
+  .watch_background {
+    background-image: url("./images/watch-tablet.jpg");
+    height: 490px;
+    width: 100%;
+    gap: 12px;
+  }
+  .macbook-background {
+    background-image: url("./images/macbook-tablet.jpg");
+    height: 490px;
+    gap: 12px;
+  }
+  .small-bizness-background {
+    background-image: url("./images/bizness-tablet.png");
+    height: 490px;
+    gap: 12px;
+  }
+  .carrier-background {
+    background-image: url("./images/carier-tablet.jpg");
+    height: 490px;
+    gap: 12px;
+  }
+  .trade-background {
+    background-image: url("./images/trade-tablet.jpg");
+    height: 490px;
+    gap: 12px;
+  }
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1119,8 +1150,21 @@ a {
   .menu-icon {
     display: none;
   }
+  .iphone17 {
+    background-image: url(./images/iphone17-desktop.jpg);
+  }
+  .iphone-blue {
+    background-image: url(./images/iphone-blue-desktop.jpg);
+  }
   .apple-gift-none {
     display: block;
+  }
+  .ipad-air {
+    background-image: url(./images/iPadAir-desktop.jpg);
+    height: 580px;
+  }
+  .solongo {
+    margin-top: 356px;
   }
   .responsive-wrapper {
     display: grid;
