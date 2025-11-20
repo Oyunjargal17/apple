@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +15,7 @@ body {
 .menu_background {
   height: 48px;
   background-color: #f5f5f7cc;
+  width: 100%;
 }
 .header-flex {
   display: flex;
@@ -28,11 +28,6 @@ body {
 }
 .menus {
   display: none;
-  /* display: block; */
-  /* display: flex; */
-  gap: 24px;
-  justify-content: center;
-  align-items: center;
 }
 .end {
   display: flex;
@@ -75,7 +70,7 @@ body {
   margin-top: 4px;
 }
 .learn-more {
-  background-color: #0071e3;
+  background-color: hwb(210 38% 3%);
   color: white;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -90,6 +85,24 @@ body {
   justify-content: center;
   align-items: center;
 }
+.learn-button:hover {
+  background-color: #71b8fb;
+}
+.tsenher-button:hover {
+  background-color: #71b8fb;
+}
+.buy-buy {
+  background-color: transparent;
+  color: #2997ff;
+  border: 1px solid #2997ff;
+}
+.buy-buy:hover {
+  color: white;
+  background-color: #2997ff;
+}
+/* .learn-more:hover {
+  background-color: #0099cc;
+} */
 .gap-12 {
   gap: 12px;
 }
@@ -151,16 +164,10 @@ button {
   display: flex;
   gap: 12px;
 }
-.buy-buy {
-  color: #2997ff;
-  background-color: transparent;
-  border: solid 1px #2997ff;
-}
-.buy-buy:hover {
+.buy_buy:hover {
+  background-color: #0071e3;
   color: white;
-  background-color: #2997ff;
 }
-
 /* =================================================== */
 /* iphone-blue */
 /* =================================================== */
@@ -264,7 +271,7 @@ button {
   background-clip: text;
   color: transparent;
   font-weight: 500;
-  margin-top: 286px;
+  margin-top: 326px;
   text-align: center;
 }
 
@@ -817,7 +824,7 @@ a {
 }
 .indicator-desktop {
   display: none;
-  /* gap: 12px; */
+  gap: 12px;
 }
 .phone-media-box {
   background-color: #6529cf;
@@ -863,10 +870,7 @@ a {
   width: 100%;
   overflow-x: hidden;
 }
-.phone-media-container:hover.phone-media-inner {
-  animation-play-state: paused;
-}
-@keyframes mobile-slider {
+@keyframes slider {
   from {
     transform: translateX(0px);
   }
@@ -875,7 +879,7 @@ a {
   }
 }
 .phone-media-inner {
-  animation: mobile-slider 8s infinite linear;
+  animation: slider 8s infinite linear;
 }
 /* =================================== */
 .phone-tablet-box {
@@ -939,7 +943,7 @@ a {
   overflow-x: hidden;
   width: 100%;
 }
-@keyframes tablet-slider {
+@keyframes slider {
   from {
     transform: translateX(0px);
   }
@@ -948,7 +952,7 @@ a {
   }
 }
 .phone-tablet-inner {
-  animation: tablet-slider 8s infinite linear;
+  animation: slider 8s infinite linear;
 }
 /* ========================================= */
 .display-media-img {
@@ -1036,7 +1040,7 @@ a {
   height: 236px;
   overflow-x: hidden;
 }
-@keyframes desktop-slider {
+@keyframes slider {
   from {
     transform: translateX(0px);
   }
@@ -1045,7 +1049,7 @@ a {
   }
 }
 .desktop-media-inner {
-  animation: desktop-slider 8s infinite linear;
+  animation: slider 8s infinite linear;
 }
 .card-background-horizontal1 {
   display: flex;
@@ -1054,12 +1058,7 @@ a {
 /* =================================== */
 /* Эндээс 768px болон түүнээс дээш хэсэг эхлэж байна */
 /* =================================== */
-@media screen and (min-width: 600px) {
-  .menu_background {
-    width: 100%;
-    height: 48px;
-    background-color: #f5f5f7cc;
-  }
+@media screen and (min-width: 768px) {
   .gol {
     align-items: start;
   }
@@ -1103,7 +1102,7 @@ a {
 /* =================================== */
 /* Эндээс 992px болон түүнээс дээш хэсэг эхлэж байна */
 /* =================================== */
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 992px) {
   .header-flex {
     display: flex;
     gap: 24px;
@@ -1111,7 +1110,7 @@ a {
     align-items: center;
   }
   .menus {
-    /* display: block; */
+    display: block;
     display: flex;
     gap: 24px;
     justify-content: center;
@@ -1226,7 +1225,6 @@ a {
   .indicator-desktop {
     display: flex;
     justify-content: center;
-    gap: 12px;
   }
   .phone-tablet-container {
     display: none;
@@ -1236,11 +1234,5 @@ a {
   }
   .desktop-media-container {
     display: block;
-  }
-  .iphone17 {
-    background-image: url(./images/horizontal-iphone16.png);
-  }
-  .iphone-blue {
-    background-image: url(./images/horizontal-iphoneBlue.jpg);
   }
 }
